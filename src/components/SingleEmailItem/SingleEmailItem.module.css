@@ -1,0 +1,56 @@
+.single_email_item_read {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid var(--border);
+  padding: 8px 1rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.single_email_item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid var(--border);
+  padding: 8px 1rem;
+  border-radius: 8px;
+  background-color: var(--read-bg);
+}
+
+.single_email_item__profile_pic {
+  width: 3rem;
+  height: 3rem;
+}
+
+.single_email_item__content__small_text {
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.single_email_item__content__date {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.single_email_item__content__sender__name,
+.single_email_item__content__subject__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.single_email_item__content__message {
+  color: var(--text);
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.single_email_item__content__footer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
