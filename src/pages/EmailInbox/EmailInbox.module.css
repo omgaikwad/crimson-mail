@@ -1,0 +1,6 @@
+.email_inbox {
+  border: 1px solid red;
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
