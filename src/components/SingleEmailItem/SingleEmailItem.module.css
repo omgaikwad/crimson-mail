@@ -7,6 +7,8 @@
   padding: 8px 1rem;
   border-radius: 8px;
   background-color: #ffffff;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .single_email_item {
@@ -18,6 +20,8 @@
   padding: 8px 1rem;
   border-radius: 8px;
   background-color: var(--read-bg);
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .single_email_item__profile_pic {

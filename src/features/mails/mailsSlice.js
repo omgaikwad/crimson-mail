@@ -15,7 +15,7 @@ const mailInitialState = {
 const getAllMails = createAsyncThunk("mails/getAllMails", async () => {
   const response = await axios.get("https://flipkart-email-mock.vercel.app/");
 
-  return response.list;
+  return response;
 });
 
 const getSingleMailContent = createAsyncThunk(
@@ -43,7 +43,7 @@ const mailsSlice = createSlice({
     },
 
     [getAllMails.fulfilled]: (state, { payload }) => {
-      state.list = payload.list;
+      state.list = payload.data.list;
       state.status = "success";
     },
 
@@ -59,7 +59,7 @@ const mailsSlice = createSlice({
     },
 
     [getSingleMailContent.fulfilled]: (state, { payload }) => {
-      state.singleMail = payload.posts;
+      state.singleMail = payload["data"];
       state.singleMailStatus = "success";
     },
 
